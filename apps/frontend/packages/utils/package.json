@@ -1,0 +1,26 @@
+{
+  "name": "@poizon-market/utils",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production npx tsup",
+    "dev": "cross-env NODE_ENV=development npx tsup --watch",
+    "lint": "eslint src/",
+    "clean": "rm -rf .turbo node_modules dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.2"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.1"
+  }
+}
